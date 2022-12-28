@@ -53,7 +53,7 @@ const SignUpForm = () => {
           <h1 className={styles.Header}>sign up</h1>
 
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlID="username">
+            <Form.Group controlId="username">
               <Form.Label className="d-none">username</Form.Label>
               <Form.Control
                 className={styles.Input}
@@ -70,7 +70,7 @@ const SignUpForm = () => {
               </Alert>
             ))}
 
-            <Form.Group controlID="Password1">
+            <Form.Group controlId="Password1">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
                 className={styles.Input}
@@ -81,8 +81,13 @@ const SignUpForm = () => {
                 onChange={handleChange}
               />
             </Form.Group>
+            {errors.password1?.map((message, idx) => (
+              <Alert variant="warning" key={idx}>
+                {message}
+              </Alert>
+            ))}
 
-            <Form.Group controlID="Password2">
+            <Form.Group controlId="Password2">
               <Form.Label className="d-none">Confirm password</Form.Label>
               <Form.Control
                 className={styles.Input}
@@ -93,6 +98,11 @@ const SignUpForm = () => {
                 onChange={handleChange}
               />
             </Form.Group>
+            {errors.password2?.map((message, idx) => (
+              <Alert variant="warning" key={idx}>
+                {message}
+              </Alert>
+            ))}
 
             <Button
               className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
@@ -100,6 +110,11 @@ const SignUpForm = () => {
             >
               Sign up
             </Button>
+            {errors.non_field_errors?.map((message, idx) => (
+              <Alert key={idx} variant="warning" className="mt-3">
+                {message}
+              </Alert>
+            ))}
           </Form>
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
