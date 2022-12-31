@@ -4,6 +4,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import appStyles from "../../App.module.css";
 import Asset from "../../components/Asset";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import Profile from "./Profile";
 
 const PopularProfiles = ({ mobile }) => {
   const [profileData, setProfileData] = useState({
@@ -44,13 +45,15 @@ const PopularProfiles = ({ mobile }) => {
           {mobile ? (
             <div className="d-flex justify-content-around">
               {popularProfiles.results.slice(0, 4).map((profile) => (
-                <p key={profile.id}>{profile.owner}</p>
+                <Profile key={profile.id} profile={profile} mobile />
               ))}
             </div>
           ) : (
             popularProfiles.results
               .slice(0, 10)
-              .map((profile) => <p key={profile.id}>{profile.owner}</p>)
+              .map((profile) => (
+                <Profile key={profile.id} profile={profile} />
+              ))
           )}
         </>
       ) : (
