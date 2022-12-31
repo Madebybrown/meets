@@ -29,7 +29,7 @@ function PostPage() {
           axiosReq.get(`/comments/?post=${id}`),
         ]);
         setPost({ results: [post] });
-        setComments(comments)
+        setComments(comments);
       } catch (err) {
         console.log(err);
       }
@@ -56,8 +56,13 @@ function PostPage() {
             "Comments"
           ) : null}
           {comments.results.length ? (
-            comments.results.map(comment => (
-              <Comment key={comment.id} {...comment} />
+            comments.results.map((comment) => (
+              <Comment
+                key={comment.id}
+                {...comment}
+                setPost={setPost}
+                setComments={setComments}
+              />
             ))
           ) : currentUser ? (
             <span>No comments yet, be the first person to comment!</span>
