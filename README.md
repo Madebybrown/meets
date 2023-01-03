@@ -19,7 +19,7 @@
 # **Features**
 
 - **Navigation Bar**
-    - Visible on all pages to make it easy for user to navigate between pages, displays different options if your logged in or logged out.
+    - Visible on all pages to make it easy for the user to navigate between pages, displays different options if you logged in or logged out.
 
 *Logged Out*
 ![NavbarLoggedOut](ReadMeAssets/navbarloggedout.png)
@@ -41,13 +41,18 @@
 
 ![PopularProfiles](ReadMeAssets/popularprofiles.png)
 
+- **Follow / Unfollow**
+    - Gives the user the option to follow or unfollow other users.
+
+![FollowUnfollow](ReadMeAssets/followunfollow.png)
+
 - **Profile Page**
-    - The users personal profile page, shows how many posts a user has created, how many followers they have and how many profiles they are following, it also displays a "bio" section and all the posts the user has posted underneath.
+    - The users' profile page, shows how many posts a user has created, how many followers they have, and how many profiles they are following, it also displays a "bio" section and all the posts the user has posted underneath.
 
 ![ProfilePage](ReadMeAssets/profilepage.png)
 
 - **Edit Profile**
-    - The user has the option to edit their profile bio, image, username and password.
+    - The user has the option to edit their profile bio, image, username, and password.
 
 ![EditProfilePage](ReadMeAssets/editprofilepage.png)
 
@@ -62,64 +67,64 @@
 
 **Add posts**
 -  A feature to let the user upload images with titles and captions.
+
 ![AddPosts](ReadMeAssets/addposts.png)
 
 **Edit posts**
 -  A feature to let the user edit their uploaded posts.
+
 ![EditPosts](ReadMeAssets/editposts.png)
 
-**Posts**
--  Let's other users see the uploaded posts so they can leave a comment and a like.
-![Posts](ReadMeAssets/posts.png)
+**Add Post Comments and likes**
+- Users can view each other posts and leave comments and likes.
 
-**Add Post Comment and likes**
 ![AddPostComment](ReadMeAssets/addpostcomment.png)
 
 # **Features left to implement**
 - Private chat
 - Bookmarking images
 - Delete/Pause personal account
-- Security check before deleting a post Example: *"Are your sure you want to delete this post?"*
+- Security check before deleting a post Example: *"Are you sure you want to delete this post?"*
 
 # **Testing**
 
 ## **Sign Up** | 
 
-1 - Feature is expected to promt the user to insert a username and password when the user tries to sign up without entering a username and password.
+1 - The feature is expected to prompt the user to insert a username and password when the user tries to sign up without entering a username and password.
     
 - *Tested the feature by trying to sign up without entering a username and a password.*
 
-- *The feature acted as expected and promted the user to insert a username and a password.*
+- *The feature acted as expected and prompted the user to insert a username and a password.*
 
-2 - Feature is expected to take the user to the sign in page when clicked if the fields are filled with a valid username and password.
+2 - The feature is expected to take the user to the sign-in page when clicked if the fields are filled with a valid username and password.
 
-- *Tested the feature by trying to sign up with a authurized username and password*.
+- *Tested the feature by trying to sign up with an authorized username and password*.
 
-- *The feature acted as expected and took the user to the sign in page.*
+- *The feature acted as expected and took the user to the sign-in page.*
 
 ## **Sign In** | 
 
-1 - Feature is expected to promt the user to insert a valid username and password when the user tries to sign in without entering a username and password.
+1 - The feature is expected to prompt the user to insert a valid username and password when the user tries to sign in without entering a username and password.
     
 - *Tested the feature by trying to sign in without entering a username and a password.*
 
-- *The feature acted as expected and promted the user to insert a username and a password.*
+- *The feature acted as expected and prompted the user to insert a username and a password.*
 
-2 - Feature is expected to take the user to the home page when clicked if the fields are filled with an authorozed username and password.
+2 - The feature is expected to take the user to the home page when clicked if the fields are filled with an authorized username and password.
 
-- *Tested the feature by trying to sign in with an authurized username and password*.
+- *Tested the feature by trying to sign in with an authorized username and password*.
 
 - *The feature acted as expected and took the user to the home page.*
 
 ## **Add Post** | 
 
-1 - Feature is expected to promt the user to insert a title and an image when the user tries to create a post without entering a title and an image.
+1 - The feature is expected to prompt the user to insert a title and an image when the user tries to create a post without entering a title and an image.
     
 - *Tested the feature by trying to create a post without entering a title and an image.*
 
-- *The feature acted as expected and promted the user to insert a title and an image.*
+- *The feature acted as expected and prompted the user to insert a title and an image.*
 
-2 - Feature is expected to take the user to the uploaded posts page when "create" is clicked if the fields are filled with a valid title and image.
+2 - The feature is expected to take the user to the uploaded posts page when "create" is clicked if the fields are filled with a valid title and image.
 
 - *Tested the feature by trying to create a post with a valid title and image*.
 
@@ -127,7 +132,7 @@
 
 ## **Delete Post** | 
 
-1 - Feature is expected to delete a post when clicked.
+1 - The feature is expected to delete a post when clicked.
     
 - *Tested the feature by trying to delete a post.*
 
@@ -135,7 +140,7 @@
 
 ## **Edit Post** | 
 
-1 - Feature is expected to take the user to the edit post page.
+1 - The feature is expected to take the user to the edit post page.
     
 - *Tested the feature by trying to click the edit icon.*
 
@@ -143,13 +148,13 @@
 
 ## **Edit Post Page** | 
 
-1 - Feature is expected to promt the user to insert a title if the user tries to edit a post by removing the title.
+1 - The feature is expected to prompt the user to insert a title if the user tries to edit a post by removing the title.
     
 - *Tested the feature by trying to edit a post by removing the title.*
 
-- *The feature acted as expected and promted the user to insert a title.*
+- *The feature acted as expected and prompted the user to insert a title.*
 
-2 - Feature is expected to take the user to the uploaded posts page when "save" is clicked if the fields are filled with a valid title.
+2 - The feature is expected to take the user to the uploaded posts page when "save" is clicked if the fields are filled with a valid title.
 
 - *Tested the feature by trying to create a post with a valid title*.
 
@@ -157,13 +162,13 @@
 
 ## **Post Comments** | 
 
-1 - Feature is expected to do nothing if the user tries to post a comment without any text content.
+1 - The feature is expected to do nothing if the user tries to post a comment without any text content.
     
 - *Tested the feature by trying to create an empty comment.*
 
 - *The feature acted as expected and did nothing.*
 
-2 - Feature is expected to post a comment if the comment field is filled with text.
+2 - The feature is expected to post a comment if the comment field is filled with text.
 
 - *Tested the feature by trying to create a comment with text content*.
 
@@ -171,35 +176,35 @@
 
 ## **Follow / Unfollow** | 
 
-1 - Feature is expected to update and *increase* the followers count of the followed user and the following count of the account owner pressing follow.
+1 - The feature is expected to update and *increase* the followers count of the following user and the following count of the account owner pressing follow.
     
 - *Tested the feature by trying to follow an account.*
 
-- *The feature acted as expected updated the fields accordingly.*
+- *The feature acted as expected and updated the fields accordingly.*
 
-2 - Feature is expected to update and *decrease* the followers count of the unfollowed user and the following count of the account owner pressing unfollow.
+2 - The feature is expected to update and *decrease* the followers count of the unfollowed user and the following count of the account owner pressing unfollow.
     
 - *Tested the feature by trying to unfollow an account.*
 
-- *The feature acted as expected updated the fields accordingly.*
+- *The feature acted as expected and updated the fields accordingly.*
 
 ## **Like / Unlike Posts** | 
 
-1 - Feature is expected to update and *increase* the like count of the post being liked and add the post to the users liked section in the navbar.
+1 - The feature is expected to update and *increase* the like count of the post being liked and add the post to the users' liked section in the navbar.
     
 - *Tested the feature by trying to like a post.*
 
 - *The feature acted as expected updated the fields accordingly and added the post to the liked section.*
 
-2 - Feature is expected to update and *decrease* the like count of the post and remove the post from the liked section.
+2 - The feature is expected to update and *decrease* the like count of the post and remove the post from the liked section.
     
 - *Tested the feature by trying to unlike a post.*
 
-- *The feature acted as expected, updated the fields accordingly and removed the post from the like section.*
+- *The feature acted as expected, updated the fields accordingly, and removed the post from the like section.*
 
 ## **Search Posts** | 
 
-1 - Feature is expected to filter posts by usernames and titles when used.
+1 - The feature is expected to filter posts by usernames and titles when used.
     
 - *Tested the feature by trying to filter posts.*
 
@@ -213,7 +218,7 @@ The project was deployed using Heroku.
     - Here you choose your app name, and your region, and then you click "Create app" down on the left-hand side, this will take you to a new page.
     - On this page, you first click on the settings tab.
     - Here you scroll down until you see the button with "Reveal Config Vars" on it, click it!
-    - Write you environment variables here and press add. 
+    - Write your environment variables here and press add. 
     - Now scroll up to the top of the page and press the "Deploy" tab and then press GitHub.
     - Search for the repository you want to deploy.
     - Press connect.
@@ -227,8 +232,8 @@ The project was deployed using Heroku.
 2. Routing: As a user, I can quickly navigate through pages to view content seamlessly without page refresh.
 3. Authentication:
 - Sign up: As a user, I can create a new account to access all features for signed-up users.
-- Sign in: As a user, I can sign in to the app to access functionality for logged-in users.
-- Logged in status: As a user, I can determine if I am logged in or not to log in if necessary.
+- Sign-in: As a user, I can sign in to the app to access functionality for logged-in users.
+- Logged-in status: As a user, I can determine if I am logged in or not to log in if necessary.
 - Refreshing access tokens: As a user, I can maintain my logged-in status until I choose to log out to ensure my user experience is not compromised.
 7. Conditional rendering: As a logged-out user, I can see sign-in and sign-up options to access the app.
 8. Avatar: As a user, I can view other users' avatars to easily identify them in the application.
@@ -246,7 +251,7 @@ The project was deployed using Heroku.
 5. Infinite scrolling: As a user, I can keep scrolling through the images on the site that are automatically loaded for me to easily view more content.
 
 ## **The Post Page**
-1. Viewing the post page: As a user, I can view the post page to read comments about the post.
+1. Viewing the posting page: As a user, I can view the posting page to read comments about the post.
 2. Editing a post: As a post owner, I can edit my post title and description to make corrections or updates.
 3. Adding a comment: As a logged-in user, I can add comments to a post to share my thoughts.
 4. Viewing comment date: As a user, I can see how long ago a comment was made to understand its age.
@@ -257,7 +262,7 @@ The project was deployed using Heroku.
 ## **The Profile Page**
 1. Viewing user profiles: As a user, I can view other users' profiles to see their posts and learn more about them.
 2. Viewing most followed profiles: As a user, I can see a list of the most followed profiles to see which profiles are popular.
-3. Viewing user stats: As a user, I can view statistics about a specific user, including their bio, number of posts, follows, and users followed, to learn more about them.
+3. Viewing user stats: As a user, I can view statistics about a specific user, including their bio, number of posts follows, and users followed, to learn more about them.
 4. Following/unfollowing a user: As a logged-in user, I can follow and unfollow other users to see and remove posts by specific users in my feed.
 5. Viewing all posts by a specific user: As a user, I can view all the posts by a specific user to catch up on their latest posts or decide if I want to follow them.
 6. Editing a profile: As a logged-in user, I can edit my profile to change my profile picture and bio.
