@@ -72,8 +72,7 @@
 -  Let's other users see the uploaded posts so they can leave a comment and a like.
 ![Posts](ReadMeAssets/posts.png)
 
-**Add Post Comment**
--  
+**Add Post Comment and likes**
 ![AddPostComment](ReadMeAssets/addpostcomment.png)
 
 # **Features left to implement**
@@ -222,5 +221,71 @@ The project was deployed using Heroku.
     - Building app
     - App build is finished
 
+# **User Stories**
+## **Navigation & Authentication**
+1. Navigation: As a user, I can view a navigation bar from every page to easily navigate between pages.
+2. Routing: As a user, I can quickly navigate through pages to view content seamlessly without page refresh.
+3. Authentication:
+- Sign up: As a user, I can create a new account to access all features for signed-up users.
+- Sign in: As a user, I can sign in to the app to access functionality for logged-in users.
+- Logged in status: As a user, I can determine if I am logged in or not to log in if necessary.
+- Refreshing access tokens: As a user, I can maintain my logged-in status until I choose to log out to ensure my user experience is not compromised.
+7. Conditional rendering: As a logged-out user, I can see sign-in and sign-up options to access the app.
+8. Avatar: As a user, I can view other users' avatars to easily identify them in the application.
+
+## **Adding & Liking Posts**
+1. Creating posts: As a logged-in user, I can create posts to share my images with the world.
+2. Viewing a post: As a user, I can view the details of a single post to learn more about it.
+3. Liking a post: As a logged-in user, I can like a post to show my support for posts that interest me.
+
+## **The Posts Page**
+1. Viewing most recent posts: As a user, I can view all the most recent posts, ordered by most recently created first, to stay up to date with the newest content.
+2. Searching for posts: As a user, I can search for posts with keywords to find posts and user profiles of interest.
+3. Viewing liked posts: As a logged-in user, I can view the posts I liked to find the posts I enjoy the most.
+4. Viewing posts of followed users: As a logged-in user, I can view content filtered by users I follow to stay up to date with their posts.
+5. Infinite scrolling: As a user, I can keep scrolling through the images on the site that are automatically loaded for me to easily view more content.
+
+## **The Post Page**
+1. Viewing the post page: As a user, I can view the post page to read comments about the post.
+2. Editing a post: As a post owner, I can edit my post title and description to make corrections or updates.
+3. Adding a comment: As a logged-in user, I can add comments to a post to share my thoughts.
+4. Viewing comment date: As a user, I can see how long ago a comment was made to understand its age.
+5. Reading comments: As a user, I can read comments on posts to learn what other users think about them.
+6. Deleting comments: As an owner of a comment, I can delete my comment to control its removal from the application.
+7. Editing a comment: As an owner of a comment, I can edit my comment to fix or update it.
+
+## **The Profile Page**
+1. Viewing user profiles: As a user, I can view other users' profiles to see their posts and learn more about them.
+2. Viewing most followed profiles: As a user, I can see a list of the most followed profiles to see which profiles are popular.
+3. Viewing user stats: As a user, I can view statistics about a specific user, including their bio, number of posts, follows, and users followed, to learn more about them.
+4. Following/unfollowing a user: As a logged-in user, I can follow and unfollow other users to see and remove posts by specific users in my feed.
+5. Viewing all posts by a specific user: As a user, I can view all the posts by a specific user to catch up on their latest posts or decide if I want to follow them.
+6. Editing a profile: As a logged-in user, I can edit my profile to change my profile picture and bio.
+7. Updating username and password: As a logged-in user, I can update my username and password to change my display name and keep my profile secure.
+
+# **Components Understanding**
+In the React architecture, components are the building blocks of a user interface. They are reusable pieces of code that can be used to represent a part of a user interface in a declarative and reusable way.
+
+One of the key benefits of using components in React is that they can be easily reused throughout an application. This helps to reduce the amount of code that needs to be written and maintained, as well as make it easier to update and modify the user interface as needed.
+
+There are a few different ways that components can be reused in a React application:
+
+1. Reusing a component within a single component tree: A component can be reused within the same component tree by rendering it multiple times with different props (short for properties). This is often done to render a list of items, for example.
+
+2. Reusing a component across different component trees: A component can be exported from one component tree and imported into another component tree, allowing it to be used in multiple places within an application.
+
+3. Reusing a component across different applications: A component can be published to a package manager such as npm, allowing it to be easily shared and reused across different React applications.
+
+Overall, the reuse of components is a key part of the React architecture and helps to make it easier to build and maintain user interfaces.
+
+# **Technologies Used**
+- HTML, CSS, JavaScript
+- React.js
+- Bootstrap.js
+- Django REST Framework
+
 # **Credits**
-- 
+- Code institute - Django REST Framework
+- Code institute - Moments
+
+## [Back To The Top](#meets)
