@@ -16,6 +16,16 @@
 
 [Drf-api Repository](https://github.com/Madebybrown/drf-api)
 
+## Table Of Contents
+- [Features](#features)
+- [Features Left To Implement](#features-left-to-implement)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [User Storie](#user-stories)
+- [Components Understaning](#components-understanding)
+- [Technologies Used](#technologies-used)
+- [Credit](#credits)
+
 # **Features**
 
 - **Navigation Bar**
