@@ -170,7 +170,57 @@
 
 - *The feature acted as expected and created a comment under the picture.*
 
+## **Follow / Unfollow** | 
+
+1 - Feature is expected to update and *increase* the followers count of the followed user and the following count of the account owner pressing follow.
+    
+- *Tested the feature by trying to follow an account.*
+
+- *The feature acted as expected updated the fields accordingly.*
+
+2 - Feature is expected to update and *decrease* the followers count of the unfollowed user and the following count of the account owner pressing unfollow.
+    
+- *Tested the feature by trying to unfollow an account.*
+
+- *The feature acted as expected updated the fields accordingly.*
+
+## **Like / Unlike Posts** | 
+
+1 - Feature is expected to update and *increase* the like count of the post being liked and add the post to the users liked section in the navbar.
+    
+- *Tested the feature by trying to like a post.*
+
+- *The feature acted as expected updated the fields accordingly and added the post to the liked section.*
+
+2 - Feature is expected to update and *decrease* the like count of the post and remove the post from the liked section.
+    
+- *Tested the feature by trying to unlike a post.*
+
+- *The feature acted as expected, updated the fields accordingly and removed the post from the like section.*
+
+## **Search Posts** | 
+
+1 - Feature is expected to filter posts by usernames and titles when used.
+    
+- *Tested the feature by trying to filter posts.*
+
+- *The feature acted as expected and updated the posts accordingly.*
+
 # **Deployment**
+The project was deployed using Heroku.
+ - Steps for deployment:
+    - First, when on the Heroku dashboard, click new up to your right-hand side, this will toggle a drop down.
+    - Click on "Create new app", this will take you to a new page.
+    - Here you choose your app name, and your region, and then you click "Create app" down on the left-hand side, this will take you to a new page.
+    - On this page, you first click on the settings tab.
+    - Here you scroll down until you see the button with "Reveal Config Vars" on it, click it!
+    - Write you environment variables here and press add. 
+    - Now scroll up to the top of the page and press the "Deploy" tab and then press GitHub.
+    - Search for the repository you want to deploy.
+    - Press connect.
+    - Scroll down until you find "Enable Automatic Deploys" and "Deploy Branch", press them, and wait while your app is building.
+    - Building app
+    - App build is finished
 
 # **Credits**
 - 
