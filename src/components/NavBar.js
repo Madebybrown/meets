@@ -36,7 +36,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="far fa-plus-square"></i>Add post
+      <i class="fa-sharp fa-solid fa-square-plus"></i>Add post
     </NavLink>
   );
   const loggedInIcons = (
@@ -46,7 +46,7 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/feed"
       >
-        <i className="fas fa-stream"></i>Feed
+        <i class="fa-sharp fa-solid fa-bars-staggered"></i>Feed
       </NavLink>
       <NavLink
         className={styles.NavLink}
@@ -112,7 +112,7 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/"
             >
-              <i className="fas fa-home"></i>Home
+              <i class="fa-solid fa-house-user"></i>Home
             </NavLink>
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
